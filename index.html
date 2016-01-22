@@ -9,29 +9,33 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="page-header">
         <h1>Ping-Pong</h1>
       </header>
-      <div class="">
-        <h2>Let's Play!</h2>
-        <h3>Rules:</h3>
-        <p>Here's how the game works. Enter a number of your choice below, and watch Ping Pong count up to your number. However, there will be the following exceptions:</p>
-          <ol>
-            <li>Numbers that are multiples of 3 will become "ping"</li>
-            <li>Numbers that are multiples of 5 will become "pong"</li>
-            <li>Numbers that are multiples of 3 and 5 will become "ping-pong"</li>
-          </ol>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+
+          <h2>Let's Play!</h2>
+          <h3>Rules:</h3>
+          <p>Here's how the game works. Enter a number of your choice below, and watch Ping Pong count up to your number. However, there will be the following exceptions:</p>
+            <ol>
+              <li>Numbers that are multiples of 3 will become "ping"</li>
+              <li>Numbers that are multiples of 5 will become "pong"</li>
+              <li>Numbers that are multiples of 3 and 5 will become "ping-pong"</li>
+            </ol>
+
+          <form id="pingPong"class="form-group">
+            <label for="userInput">Enter your number here:</label>
+            <input id="userInput" type="number">
+            <button id="submit" type="submit">Ping-Pong!</button>
+          </form>
+
+          <ul>
+            <span id="result"></span>
+          </ul>
+
+        </div>
       </div>
-
-      <form id="pingPong"class="form-group">
-        <label for="userInput">Enter your number here:</label>
-        <input id="userInput" type="number">
-        <button id="submit" type="submit">Ping-Pong!</button>
-      </form>
-      <ul>
-        <span id="result"></span>
-      </ul>
-
     </div>
 
   </body>

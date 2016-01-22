@@ -2,7 +2,7 @@ var pingPong = function(input){
 
   var count = input;
   var newString = [];
-// debugger;
+
   for (var i = 1; i <= count; i++) {
     if (i % 15 === 0) {
       newString.push("ping-pong")
@@ -25,11 +25,15 @@ return spaces;
 $(document).ready(function() {
 
   $('form#pingPong').submit(function(event) {
-
+    $("span").html("");
     var input = parseInt($('#userInput').val());
     var pingString = pingPong(input);
-
-    $('#result').text(pingString);
+debugger;
+    for (var j = 1; j = pingString.length; j++) {
+      var result = pingString.splice(0,1);
+      result = result + '</br>'
+      $('#result').append(result);
+    }
 
     event.preventDefault();
   });

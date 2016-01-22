@@ -1,0 +1,30 @@
+body {
+  font-size: 1.75em;
+}
+
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: green;
+  border: 2.5px black solid;
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+}
+
+ol {
+  text-align: center;
+  list-style-position: inside;
+  list-style: bold;
+}
+
+form label, form input, form button {
+  margin-top: 25px;
+}
+
+ul {
+  text-align: center;
+}
