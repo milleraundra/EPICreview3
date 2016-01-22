@@ -28,7 +28,7 @@ $(document).ready(function() {
     $("span").html("");
     var input = parseInt($('#userInput').val());
     var pingString = pingPong(input);
-debugger;
+
     for (var j = 1; j = pingString.length; j++) {
       var result = pingString.splice(0,1);
       result = result + '</br>'

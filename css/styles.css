@@ -1,14 +1,23 @@
 body {
   font-size: 1.75em;
+  /*background-color: #E8D0A9;*/
+  font-family: 'Open Sans', sans-serif;
 }
 
+.container {
+  margin: 30px auto;
+  background-color: #B7AFA3;
+  border-radius: 15px;
+}
 
 h1 {
   text-align: center;
   padding: 20px;
-  background-color: green;
-  border: 2.5px black solid;
-  border-radius: 8px;
+  margin: 0;
+  margin-bottom: 20px;
+  background-color: #6D929B;
+  border: 2px black solid;
+  border-radius: 15px;
 }
 
 h2 {
@@ -27,4 +36,11 @@ form label, form input, form button {
 
 ul {
   text-align: center;
+  background-color: #C1DAD6;
+  padding: 5px;
+  margin: 50px;
+  border-radius: 15px;
 }
+
+
+/*#E8D0A9 #B7AFA3 #C1DAD6 #F5FAFA #ACD1E9 #6D929B*/
