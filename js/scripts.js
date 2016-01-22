@@ -2,7 +2,7 @@ var pingPong = function(input){
 
   var count = input;
   var newString = [];
-
+// debugger;
   for (var i = 1; i <= count; i++) {
     if (i % 15 === 0) {
       newString.push("ping-pong")
@@ -13,12 +13,15 @@ var pingPong = function(input){
     }else{
       newString.push(i)
     }
-
   }
-  return newString;
+  var spaces = [];
+  for (var j = 0; j < newString.length; j++) {
+    spaces.push(" " + newString[j]);
+  }
+
+return spaces;
+
 }
-
-
 $(document).ready(function() {
 
   $('form#pingPong').submit(function(event) {
@@ -31,3 +34,9 @@ $(document).ready(function() {
     event.preventDefault();
   });
 });
+
+
+// var pingHtml = [];
+// for (var j = 0; j <= newString.length; j++) {
+//   pingHtml.push("<li>" + newString[j] + "</li>");
+// }
