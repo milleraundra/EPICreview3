@@ -1,12 +1,9 @@
-var pingPong = function(num){
+var pingPong = function(input){
 
-  var count = num;
+  var count = input;
   var newString = [];
-  // var ping = "ping";
-  // var pong = "pong";
 
-  for (var i = 1; i <= num; i++) {
-// debugger;
+  for (var i = 1; i <= count; i++) {
     if (i % 15 === 0) {
       newString.push("ping-pong")
     }else if (i % 3 === 0) {
@@ -18,8 +15,19 @@ var pingPong = function(num){
     }
 
   }
-console.log(newString);
-
-
   return newString;
 }
+
+
+$(document).ready(function() {
+
+  $('form#pingPong').submit(function(event) {
+
+    var input = parseInt($('#userInput').val());
+    var pingString = pingPong(input);
+
+    $('#result').text(pingString);
+
+    event.preventDefault();
+  });
+});
