@@ -10,7 +10,7 @@ _This application will allow users to input a number of their choice and return 
 
 ## Setup/Installation Requirements
 
-**To View:** View this link:
+**To View:** Follow this link: http://milleraundra.github.io/EPICreview3/
 
 **To Edit:**
 * _Fork this GitHub repository:_ https://github.com/milleraundra/EPICreview3.git
