@@ -14,10 +14,6 @@ var pingPong = function(input){
       newString.push(i)
     }
   }
-  // var spaces = [];
-  // for (var j = 0; j < newString.length; j++) {
-  //   spaces.push(" " + newString[j]);
-  // }
 
 return newString;
 
