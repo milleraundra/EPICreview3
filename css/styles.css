@@ -6,7 +6,7 @@ body {
 
 .container {
   margin: 30px auto;
-  background-color: #B7AFA3;
+  background-color: #C59A6F;
   border-radius: 15px;
 }
 
@@ -15,12 +15,18 @@ h1 {
   padding: 20px;
   margin: 0;
   margin-bottom: 20px;
-  background-color: #6D929B;
+  color: #fff;
+  background-color: #821122;
   border: 2px black solid;
   border-radius: 15px;
 }
 
 h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+h3 {
   text-align: center;
 }
 
@@ -36,11 +42,8 @@ form label, form input, form button {
 
 ul {
   text-align: center;
-  background-color: #C1DAD6;
+  background-color: #CCCCCC ;
   padding: 5px;
   margin: 50px;
   border-radius: 15px;
 }
-
-
-/*#E8D0A9 #B7AFA3 #C1DAD6 #F5FAFA #ACD1E9 #6D929B*/

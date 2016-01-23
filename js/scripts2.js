@@ -25,14 +25,17 @@ return newString;
 $(document).ready(function() {
 
   $('form#pingPong').submit(function(event) {
-    $("span").html("");
+    // $("span").html("");
+    $('#result').empty();
     var input = parseInt($('#userInput').val());
     var pingString = pingPong(input);
 
-    for (var j = 1; j = pingString.length; j++) {
-      var result = pingString.splice(0,1);
-      result = result + '</br>'
-      $('#result').append(result);
+// debugger;
+    for (var j = 0; j <= pingString.length; j++) {
+
+      // var result = pingString.splice(0,1);
+      // result = result + '</br>'
+      $('#result').append("<li>" + pingString[j] + "</li>");
     }
 
     event.preventDefault();
